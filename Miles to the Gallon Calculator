@@ -1,0 +1,19 @@
+// this executable asks the user to input total miles driven and then askes for total gallons of gas used,
+// then calculates the total miles to gallon. Using the formula miles input divided by gallons used.  
+
+
+int main()
+
+{
+	float miles = 0;			
+	float  gallons = 0;		
+	
+
+	cout << "please enter the total number of miles driven:" << endl; 
+	cin >> miles;
+	cout << "PLease enter the total gallons of gas used: " << endl;
+	cin >> gallons;
+	cout << "The total miles-per-gallon is:" << ( miles / gallons) << endl;
+	
+	return 0;
+}
