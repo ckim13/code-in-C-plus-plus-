@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+int main()
+
+{   // this code will ask the for firstName and last name, body tempature, height, age, gender, sex and student ID
+	string first_Name;
+	double  Age;
+	string  last_Name; 
+	float bodyTemp = 0.0; 
+	double Height = 0'0;
+	float Weight = 0.0; 
+	int studentid = 000000; 
+	char Sex; 
+	cout << "Enter your first name: " << endl;
+	cin >> first_Name;
+	cout << "Enter your last name:" << endl;
+	cin	>> last_Name;
+	cout << "Enter your age: " << endl; 
+	cin >> Age;
+	cout << "Hello " << first_Name << " "<< last_Name << "! " << "your age is " << Age << "\n"; 
+	cout << "Please enter the following information: " << endl; 
+	cout << "enter your body tempature: " << endl;
+	cin >> bodyTemp; 
+	cout << "Please enter your Height: " << endl; 
+	cin >> Height;
+	cout << "Please enter your Weight: " << endl; 
+	cin >> Weight; 
+	cout << "Please enter your gender: " << endl; 
+	cin >> Sex; 
+	cout << "Please Enter your student ID: " << endl; 
+	cin >> studentid;
+	cout << "Hello " << first_Name << " " << last_Name << " " << "your Height is: " << " " << Height << endl;
+	cout << "your Weight is :" << " " << Weight << " "<< "your gender is :" << " " << Sex << endl; 
+	cout << "your student I.D. is:" << " " << studentid << endl;
+	return 0;
+
+
+}
