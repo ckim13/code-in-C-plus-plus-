@@ -1,0 +1,28 @@
+#include <iostream> 
+#include <iomanip>
+#include <cmath>
+// Christopher Kim 
+using namespace std;
+int main()
+{
+	int num;
+	int counter = 0;
+	double average;
+	int sum = 0;
+	cout << endl << "Enter a number, or 777 to quit" << endl;		
+	cin >> num;								 
+	while (num != 777)							 
+	{
+		sum += num;
+		cout << "Number entered is: " << num << " and the sum total of the numbers entered is: " << sum << endl;		 
+		counter++;
+		cout << "Enter a numbers, or 777 to quit" << endl; 	 
+		cin >> num; 							
+	}
+	cout << fixed << setprecision(2) << endl;
+	average = static_cast<double> (sum) / num;
+
+	cout << "the number count is: " << counter << endl;
+	cout << "the average is: " << average << endl;
+	return 0;
+} //end main and program
