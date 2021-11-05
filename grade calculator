@@ -1,0 +1,30 @@
+include <iostream>
+using namespace std;
+// && is AND || is OR 
+// This lab was built by Christopher Kim
+int main()
+{
+
+	float average;    // holds the grade average
+
+	cout << "Input your average:" << endl;
+	cin >> average;
+
+	if ( (average >= 90) && (average <= 100) )
+		cout << " You Passed. Letter Grade:  A. " << endl;
+	else if ( (average >= 80)  && (average < 90) ) 
+		cout << "You Passed. Letter Grade:  B. " << endl; 
+	else if ( (average >= 70) && (average < 80) ) 
+		cout << "you Passed.  Letter Grade: C. " << endl; 
+	else if (average > 100)
+		cout << "Invalid input. Please enter a valid input.  " << endl; 
+	else if ( (average <= 69) && (average > 0) ) 
+		cout << "You Fail. " << endl; 
+	else if ( average < 0)
+	cout << "error detected. Please enter a valid input.  " << endl; 
+	 
+	return 0;
+}
+
+
+
