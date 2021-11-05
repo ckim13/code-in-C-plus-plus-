@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double salesPrice = 0.0;
+	double Taxrate = 0.0;
+	double salesTax = 0.0;
+	double cost = 0.0;
+	cout << "Please enter the sale price: ";
+	cin >> salesPrice;
+	cout << "Please enter the tax rate for your state: ";
+	cin >> Taxrate;
+	//calculates the sales tax and cost
+	salesTax = salesPrice * Taxrate;
+	cost = salesPrice + salesTax;
+	cout << "Cost: $ " << cost << endl;
+	return 0;
+}
